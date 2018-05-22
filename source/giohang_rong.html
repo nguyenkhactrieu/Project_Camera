@@ -1,0 +1,301 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width", initial-scale=1 /> 
+<title>
+    camera
+</title>
+<!---<base href="http://192.168.231.102/khactrieucamera3/" />-->
+<!---<base href="http://khactrieucamera.cf/" />-->
+<link rel="Shortcut Icon" href="images/camera-42319_960_720.png" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/style_index.css"/>
+<!--*********************reponsive_mobile_taplet*********************-->
+<link rel="stylesheet" type="text/css" href="css/reponsive.css"/>
+<link rel="stylesheet" type="text/css" href="css/slideshow.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<!--<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>-->
+<script type="text/javascript" src="js/script.js"></script>
+<!--*********************//reponsive_mobile_taplet*********************-->
+<!--************************slider********************-->
+<link rel="stylesheet" href="slider/jquery.bxslider.min.css">
+<script src="slider/jquery.bxslider.min.js"></script>
+<!--********************************************-->
+<!--icon-font-->
+<link rel="stylesheet" type="text/css" href="fonts/css/font-awesome.min.css" />
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">-->
+<!--style Binh Luan-->
+<!--binh chon-->
+
+<script>
+    $(document).ready(function() {
+        $('.slider').bxSlider({
+            auto: true, // tự động
+            pager: true,
+        });
+        
+        $dem = $('.logosl ul li').size();
+        $img = $('.logosl ul').children();
+        $img.attr("id", function(id){
+            return "img"+id;
+        });
+        setInterval(function () {
+            $('.logosl ul').animate({'margin-left':'-=200px'},1000,
+            function(){
+                $('.logosl ul li:first').appendTo('.logosl ul');    
+                $('.logosl ul').css('margin-left',0);
+            });
+        }, 4000);
+    });
+</script>
+</head>
+<body>
+    <!--bình luận facebook-->
+    <!---->
+<div class="wrapper">
+    <div class="header">
+        <div id="top-header">
+            <div class="container">     
+                <div class="tt-left">
+                    <a style="text-decoration:none" href="../khactrieucamera3"><i style="font-size:20px;" class="fa fa-home" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="hotline">Hotline</span>&nbsp;
+                    <a href="#" style="text-decoration:none"><i class="glyphicon glyphicon-earphone"> </i> &nbsp;</a><span class="hotline">0963.537.347</span> 
+                </div><!--/tt-left-->
+                
+                <div class="cart">
+                    <a style="text-decoration:none" href="p/giohang.html"><i class="glyphicon glyphicon-shopping-cart"></i> <span></span></a>
+                </div>
+                
+                <div class="tt-menu">
+                    <ul >
+                      <li class="active"><a href="#">Liên Hệ</a></li>
+                      <li><a href="#">Bảng Giá</a></li>
+                      <li><a href="#">Giới Thiệu</a></li>
+                    </ul>
+                </div>
+            </div><!--//container-->
+        </div><!--/top-header-->
+
+        <div id="main-header">
+            <div class="container">
+                <div id="logo"> 
+                    <a href=""><img src="images/Photo-Camera-Free-Download-PNG.png" width="150px" alt="Logo" /></a>
+                </div><!--/logo-->
+                <div class="btnmenu-mobile">
+                    <span class="glyphicon glyphicon-align-justify"></span>
+                </div><!--/menu-mobile-->
+                <script type="text/javascript">
+                    $(document).ready(function(){
+                        $('.btnmenu-mobile').on('click',function(){
+                            $('#main-menu-mobile ul').toggleClass('open');
+                        });
+                    });
+                </script>
+                <div id="main-menu-mobile">
+                    <ul>
+                        <li>
+                            <a href="">tenloai</a> 
+                            <span class="glyphicon glyphicon-play"></span>
+                        </li>
+                    </ul>
+                </div><!--/main-menu-mobile-->
+                <div id="search-box">
+                    <form action="index.html" method="get" id="frmsearch">
+                        <div class="fiel clearfix">
+                            <input type="text" placeholder="Tìm sản phẩm" value="" id="search" name="search" autocomplete="off" />
+                            <button type="submit" id="btnsubmit" name="" value="submit" title="Tìm kiếm">
+                                <span class="glyphicon glyphicon-search"> </span>
+                            </button>
+                        </div>
+                    </form>
+                </div><!--/search-box-->
+                <div style="float:right" class="dangnhap">
+                    <a href="" style="color:#FFF; margin:0px" id="dangnhap_p">
+                    <!--avartar-->
+                    <div id="avartar" style="float: left; width: 40px; height: 40px;">
+                        
+                    </div>
+                    <!--NAME USER-->
+                    <div id="name" style="float: left; line-height: 50px;">
+                        <span style="color:white; padding-left: 20px;">ten</span>
+                    </div>
+
+                    <!--menu setting-->
+                    <div id="logout" style="float: left; padding-left: 20px; cursor: pointer;">
+                        <i id="arow_dow" class="fa fa-caret-down" aria-hidden="true" style=" line-height: 50px;font-size: 20px; color:white"></i>
+                    </div>
+                    <!--menu setting-->
+                    <div id="menu_logout">
+                        <ul>
+                            <li>
+                                <a href="<?php echo $rowU['idUser'];?>/doi-mat-khau.html"><i class="fa fa-key" aria-hidden="true"></i>&nbsp Đổi mật khẩu</a>
+                            </li>
+                            <li>
+                                <a href="<?php echo $rowU['idUser'];?>/doi-anh-dai-dien.html"><i class="fa fa-file-image-o" aria-hidden="true"></i>&nbsp Đổi ảnh đại diện</a>
+                            </li>
+                            <li>
+                                <a href="popup/xuly.php?key=thoat"><i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp Đăng xuất</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <br />
+                <div style="float:right" class="dangki">
+                    <a href="dangky.html" style="color:#FFF; padding-top: 20px;" id="dangki_p" >Đăng kí tài khoản | </a>
+                </div>
+            </div><!--/container-->
+        </div><!--/main-header-->
+    </div><!--//header-->
+    <!--Phần menu, slide ảnh-->
+    <div class="menu-slideshow">
+        <div class="container" >
+            <!--*********************************MENU*********************************-->
+            <div class="menu-sp">
+                <div id="tieude"> 
+                    <i class="glyphicon glyphicon-list" style="margin-left:20px; margin-right:20px" ></i>Danh Muc
+                </div><!--//tieude-->
+                <ul>
+                    <li>
+                        <a href="">san pham </a> 
+                        <span class="glyphicon glyphicon-play"></span>
+                    </li>
+                    <li>
+                        <a href="">san pham </a> 
+                        <span class="glyphicon glyphicon-play"></span>
+                    </li>
+                
+                </ul>
+                <div class="quancao" style="width: 100%; height: 100px;margin-top: 10px;">
+                    <img src="images/banner-giao-hang-nhanh-white-doctors.png" style="width: 100%; height: 100px;" alt="">
+                </div>
+            </div> <!--//menu-sp-->
+            
+            <!--*********************************Slideshow*********************************************-->
+            <div class="slide">
+                <div class="slider">
+                    <img src="images/002.jpg" width="100%" alt="">
+                    <img src="images/001.jpg" width="100%" alt="">
+                </div>
+            </div> <!--//spnoibat-->
+        </div><!--//container-->
+    </div><!--//menu-slideshow-->
+    <div class="container" id="container">
+        <!--//SAN PHAM MOI-->
+        <div class="tatcasanpham">
+            <div id="giohang">
+                <div id="main-cart">
+                    <div id="cart_nl">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        <p>Không có sản phẩm nào trong giỏ hàng</p>
+                        <div id="back_index">
+                            <a href="index.html">Quay về trang chủ</a>
+                        </div>
+                        <span>Khi cần trợ giúp vui lòng gọi 0963.537.347</span>
+                        <p>(9h-21h)</p>
+                    </div>
+                </div>
+            </div>
+        </div><!--//Container SAN PHAM-->
+        <div style="" class="tintuc">
+            <!--bản đồ google maps-->
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3919.039834372606!2d106.6451132714238!3d10.808261074902516!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752946ab4b7ec9%3A0x9a5c3bc946cc1db!2zSOG6u20gNCBWxINuIENodW5nLCBwaMaw4budbmcgMTMsIFTDom4gQsOsbmgsIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1512359309413" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div><hr />
+            <!--san phẩm nổi bật-->
+            <div style="" class="tieude">SẢN PHẨM XEM NHIỀU</div>
+                <div style="" class="spmoi" style="margin-bottom: 1px solid red">
+                    <a href="" style="display: block;" title="Xem chi tiết">
+                        <div class="hinh">
+                            <img style="width: 100%" src="images/canon/canon6d.jpg" alt="" />
+                        </div>
+                        <div class="thongtinsp">
+                            <b>Ten san pham</b><br /> <br />
+                            <div class="rateit" id="rateit" data-rateit-readonly="true" data-rateit-value="">
+                            </div><br><br>
+                            
+                            <div class="gia">giá : 12 vnd</div>
+                            <!--giam gia-->
+                            giam gia
+               
+                            <div class="gia" style="margin-bottom: 30px;">giá 12 vnd</div>
+                        </div>
+                        <div style="clear: both;"></div>
+                    </a>
+                </div>
+        </div> <!--//TIN TUC-->
+    </div>
+    
+    <!--logo thuong hieu-->
+    <div class="container" style="padding: 20px;">
+        <div class="logosl">
+            <ul>
+                <li><img src="images/logo/canon.png"  ></li>
+                <li><img src="images/logo/fujifilmpng.png"  ></li>
+                <li><img src="images/logo/nikon.png" ></li>
+                <li><img src="images/logo/olympus.png" ></li>
+                <li><img src="images/logo/sony.png" ></li>
+                <li><img src="images/logo/panasonic.png" ></li>
+                <li><img src="images/logo/pentax.png" ></li>
+                <li><img src="images/logo/samsung.png" ></li>
+            </ul>
+         </div>
+    </div>
+    <div class="footer">
+        <div class="thongtinchung">
+            <div class="thongtin">
+                <a href="#">THÔNG TIN</a>
+                <p>Địa chỉ: 14/1/4 Văn Chung, P.13, Q.Tân Bình, TP.HCM | 37N, Nguyễn Thị Minh Khai, TT.Gia Ray, Xuân Lộc, Đồng Nai</p>
+                <p>Điện thoại: 0963.537.347</p>
+            </div>
+            <div class="dichvu">
+                <a href="#">DỊCH VỤ</a>
+                <p>Mua bán máy ảnh, phụ kiện máy ảnh, máy quay phim</p>
+                <p>Cho thuê máy ảnh</p>
+                <p>Chụp ảnh cưới</p>
+                <p>Phục hồi ảnh cũ</p>
+                <p>Sủa chữa máy ảnh, máy quay phim</p>
+            </div>
+            <div class="copy">Copyright © 2018 KhacTrieuCamera.com | WEB PHP</div>
+        </div>
+    </div>
+        <!--//footer-->
+    <!--chen trang dang nhap, dang ky-->
+    
+</div> <!--//wrapper-->
+<div class="link" style="position: fixed; top: 40%;z-index: 30;width: 30px">
+    <div class="fb">
+        <a href="https://www.facebook.com/" target="_blank" title="Liên kết đến Facebook"><img src="images/facebook.png" width="100%" alt="facebook" /></a>
+    </div>
+    <div class="fb">
+        <a href="https://plus.google.com" target="_blank" title="Liên kết đến Google+" ><img src="images/google.png" width="100%" alt="" /></a>
+    </div>
+    <div class="fb">
+        <a href="https://twitter.com" target="_blank" title="Liên kết đến Twitter"><img src="images/Twitter.png" width="100%" alt="" /></a>
+    </div>
+</div>
+<!--CHAT ONLINE
+<div class="chat" >
+    <div id="chat_header">
+        <span>Chat tư vấn trực tiếp</span>
+        <i class="fa fa-angle-down" aria-hidden="true"></i>
+    </div>
+    <div id="chat_document" style="padding: 10px;">
+        <div id="mes_chat" style="width:100%;height: 200px; padding: 10px; overflow-y: auto; box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.25); ">
+            <p style="background: #f4c6f7; padding: 5px; border-radius: 4px">Xin chào, quý khách vui lòng để lại tin nhắn để được hỗ trợ.</p>
+            <?php 
+               // if(isset($_SESSION['tk'])){
+                    //for($dem = 1 ; $dem <= $_SESSION['tk']; $dem++){
+                       // echo '<p style="background: #d3d3ff; corlor:black;padding: 5px; border-radius: 4px">'.$_SESSION['tk'.$dem].'</p>';
+                  //  }
+               // }?>
+        </div>
+        <textarea name="" id="textarea" rows="3" placeholder="Nhập nội dung và nhấn Enter để gửi" style="width: 100%; margin-top: 10px;"></textarea>
+    </div>
+</div>-->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script>
+</script>
+</body>
+</html>

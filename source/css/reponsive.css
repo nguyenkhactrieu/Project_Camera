@@ -1,0 +1,143 @@
+/* CSS Document */
+
+* {
+   box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+}
+@media only screen and (max-width:767px) {
+	#search-box {
+		width:70%;
+		margin-left:0px;
+		position:relative;
+	}
+	.tt-menu {
+		display:none;
+	}
+	.tt-left{
+		width: 70%;
+	}
+	.btnmenu-mobile {
+		display:block;
+	}
+	.menu-sp{
+		display: none;
+	}
+	.slider{
+		width: 100%;
+		padding-left: 0px;
+	}
+	#search-box {
+		margin-top:10px;
+		margin-bottom:10px;
+	}
+	.slide {
+		width: 100%;
+	    float: right;
+	    margin-top: 10px;
+	}
+	.tintuc {
+		float: left;
+		width: 100%;
+		margin-bottom: 50px;
+	}
+	.tatcasanpham{
+		width: 100%;
+	}
+	#name_gia{
+		width: 50%;
+	}
+	#giohang #top span{
+		width: 100%;
+	}
+	#giohang #top{
+		height: 80px;
+	}
+	#chonDiaChi #tinhthanh{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	#chonDiaChi #quanhuyen{
+		width: 100%;
+	}
+	#chonDiaChi #phuongxa{
+		width: 100%;
+		margin-top: 10px;
+	}
+	.quangcao{
+		width: 100%;
+		margin-left: 0px;
+		top:30px;
+	}
+}
+@media only screen and (min-width:480px) and (max-width:766px) {
+	.tatcasanpham .chitiet .hinh {
+		width:45%;
+	}
+	.tatcasanpham .chitiet .tinhnang{
+		width: 55%;
+	}
+}
+@media only screen and (max-width:320px) {
+	.tatcasanpham .chitiet .hinh {
+		width:100%;
+	}
+	.tatcasanpham .chitiet .tinhnang{
+		width: 100%;
+	}
+}
+@media only screen and (min-width:321px) and (max-width:479px) {
+	.tatcasanpham .chitiet .hinh {
+		width:100%;
+	}
+	.tatcasanpham .chitiet .tinhnang{
+		width: 100%;
+	}
+}
+@media only screen and (max-width:455px) {
+	#tongtien_span{
+		float: left;
+		margin-top: 10px;
+	}
+}
+@media only screen and (min-width:768px) {
+	#main-menu-mobile {
+		display: none;
+	}
+}
+@media only screen and (max-width:320px) {
+	.tatcasanpham .sanpham{
+		width: 100%;
+	}
+}
+@media only screen and (min-width:321px) and (max-width:432px)  {
+	.tatcasanpham .sanpham{
+		width: 47%;
+	}
+}
+@media only screen and (min-width:525px) and (max-width:640px)  {
+	.tatcasanpham .sanpham{
+		width: 30%;
+	}
+}
+/*-------------reponsive form dang nhap, dang ki---------------*/ 
+@media only screen and (max-width:600px) {
+	#formlogin{
+		width: 90%;
+		left: 5%;
+		height: auto;
+		padding-bottom: 20px;
+	}
+	#formlogin h3{
+		height: auto;
+	}
+}
+@media only screen and (max-width:600px) {
+	#formdangki{
+		width: 90%;
+		left: 5%;
+	}
+	#formdangki h3{
+		height: auto;
+	}
+}

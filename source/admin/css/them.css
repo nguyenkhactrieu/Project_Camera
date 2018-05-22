@@ -1,0 +1,31 @@
+span {
+	color: red;
+}
+#table_them tr td{
+	border: .3px solid #e8dede;
+}
+tr{
+	font-weight: bold;
+	border: 1px solid gray;
+}
+#table_them textarea{
+	height: 300px;
+	width: 700px;
+}
+#table_them #submit{
+	cursor: pointer; 
+	background: blue;
+	color: white; 
+	width: 60px;
+	height: 40px; 
+	border-radius:10px;
+}
+#table_them{
+	width:1000px;
+	margin: auto;
+}
+#table_them #submit:hover{
+	background: white;
+	color: black;
+	border: 1px solid black;
+}

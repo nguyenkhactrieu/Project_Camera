@@ -1,0 +1,109 @@
+@media only screen and (max-width:767px) {
+	.menu .sub_menu {
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 41px;
+    width: 100%;
+    background: #442b2b;
+    z-index: 20;
+    border-top:3px solid red;
+	}
+	.menu .sub_menu li {
+		border-left: none;
+	}
+	#content{
+		width: 100%;
+		margin-right: 0px;
+	}
+	#container{
+		padding-right: 0px;
+	}
+}
+@media only screen and (max-width:480px) {
+	#menu_wrapper{
+		width: 100%;
+	}
+}
+@media only screen and (min-width:481px) and (max-width: 767px) {
+	#menu_wrapper{
+		width: 100%;
+	}
+	#content{
+		width: 100%;
+		margin-right: 0px;
+	}
+	.menu{
+		width: 44%;
+		float: left;
+	}
+	.menu .sub_menu {
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 41px;
+    width: 100%;
+    background: #442b2b;
+    z-index: 20;
+    border-top:3px solid red;
+	}
+	.menu .sub_menu li {
+		border-left: none;
+	}
+}/*
+@media only screen and (min-width:321px) and (max-width: 390px) {
+	#menu_wrapper{
+		width: 70%;
+	}
+}
+@media only screen and (min-width:391px) and (max-width: 767px) {
+	#menu_wrapper{
+		width: 60%;
+	}
+}*/
+@media only screen and (min-width:768px) and (max-width: 1100px){
+	#menu_wrapper{
+		width: 100%;
+	}
+	#content{
+		width: 100%;
+		margin-right: 0px;
+	}
+	.menu{
+		width: 47%;
+		float: left;
+	}
+	.menu .sub_menu {
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 41px;
+    width: 100%;
+    background: #442b2b;
+    z-index: 20;
+    border-top:3px solid red;
+	}
+	.menu .sub_menu li {
+		border-left: none;
+	}
+}
+@media only screen and (width:1099px){
+	#menu_wrapper{
+		width: 40%;
+	}
+	#content{
+		width: 100%;
+		margin-right: 0px;
+	}
+}
+@media only screen and (max-width:600px) {
+	#formlogin{
+		width: 90%;
+		left: 5%;
+		height: auto;
+		padding-bottom: 20px;
+	}
+	#formlogin h3{
+		height: auto;
+	}
+}

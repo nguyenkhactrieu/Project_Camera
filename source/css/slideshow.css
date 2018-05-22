@@ -1,0 +1,9 @@
+.slides ul li img{
+
+}
+.slides ul li{
+	float: left;
+}
+.slides ul{
+	width: 5000px;
+}

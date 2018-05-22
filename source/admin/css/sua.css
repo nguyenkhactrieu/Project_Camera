@@ -1,0 +1,24 @@
+tr{
+	font-weight: bold;
+}
+#table_sua textarea{
+	height: 300px;
+	width: 300px;
+}
+#table_sua #submit{
+	cursor: pointer; 
+	background: blue;
+	color: white; 
+	width: 60px;
+	height: 40px; 
+	border-radius:10px;
+}
+.wrapper #table_sua{
+	width:1000px;
+	margin: auto;
+}
+#table_sua #submit:hover{
+	background: white;
+	color: black;
+	border: 1px solid black;
+}
